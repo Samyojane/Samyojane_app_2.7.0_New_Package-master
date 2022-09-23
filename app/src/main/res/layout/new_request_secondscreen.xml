@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/field_report"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/taluk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taluk"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/hobli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobli"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/VA_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tvServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_name"
+            android:textColor="#377691"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/applicant_Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/applicant_information"
+            android:textColor="@color/MAROON"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editing_form"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/raised_location"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    android:layout_marginStart="9dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_raiseLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    android:layout_marginStart="9dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="5dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoSearchAppTitle"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black"
+                        android:completionThreshold="1"
+                        android:backgroundTint="@android:color/black"
+                        android:hint="@string/select_title"/>
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="start"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/father_husband"
+                    android:layout_gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_gravity="top"
+                    android:text="@string/colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="5dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoSearchBinCom"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black"
+                        android:completionThreshold="1"
+                        android:backgroundTint="@android:color/black"
+                        android:hint="@string/select_title"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoSearchFatTitle"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black"
+                        android:completionThreshold="1"
+                        android:backgroundTint="@android:color/black"
+                        android:hint="@string/select_title"/>
+
+                    <EditText
+                        android:id="@+id/tvFatherNme"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:hint="@string/enter_father_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_gravity="start"
+                        android:inputType="textPersonName"
+                        android:backgroundTint="@android:color/black"
+                        android:autofillHints="@string/enter_father_name"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mother"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/tvMotherName"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_mother_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/black"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_IDName"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/id_number"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_for_Aadhaar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="7dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/tvAddress1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_your_address"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:inputType="textMultiLine"
+                            android:backgroundTint="@android:color/black"
+                            android:autofillHints="@string/enter_your_address"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/tvAddress2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_your_address"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:inputType="textMultiLine"
+                            android:backgroundTint="@android:color/black"
+                            android:autofillHints="@string/enter_your_address"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/tvAddress3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_your_address"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:inputType="textMultiLine"
+                            android:backgroundTint="@android:color/black"
+                            android:autofillHints="@string/enter_your_address"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pin_code"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tvPinCode"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_pin_code"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:inputType="phone"
+                    android:backgroundTint="@android:color/black"
+                    android:autofillHints="@string/enter_pin_code" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_annualIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/annual_income"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tvAnnualIncome"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_annual_income"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:inputType="phone"
+                    android:backgroundTint="@android:color/black"
+                    android:autofillHints="@string/enter_pin_code" />
+
+            </LinearLayout>
+ <LinearLayout
+     android:id="@+id/ll_age"
+     android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tvAge"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_age"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:inputType="phone"
+                    android:backgroundTint="@android:color/black"
+                    android:autofillHints="@string/enter_pin_code" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="@string/colon"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_ReportNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/back"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_background"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/button_background"
+                android:text="@string/certified_correct_amp_proceed"
+                android:textColor="@android:color/black"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

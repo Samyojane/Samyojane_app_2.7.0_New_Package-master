@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:id="@+id/tl_service39"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="5dp">
+
+        <TableRow
+            android:id="@+id/tr_resi_dist"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_dist"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cre_district_name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <Spinner
+                android:id="@+id/sp_resi_dist"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_taluk"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_taluk"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cre_taluk_name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <Spinner
+                android:id="@+id/sp_resi_taluk"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_urban_rural"
+            android:layout_marginTop="5dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupUR"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonRural"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:checked="true"
+                    android:text="@string/rural"
+                    android:textSize="16sp"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonUrban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="@string/urban"
+                    android:textSize="16sp"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_hobli"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_hobli"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cre_hobli_name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <Spinner
+                android:id="@+id/sp_resi_hobli"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_village"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_village"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/village"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <Spinner
+                android:id="@+id/sp_resi_village"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_subvillage"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_subvillage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/subvillage"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <Spinner
+                android:id="@+id/sp_resi_subvillage"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_from"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_from"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/staying"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_resi_to"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/etStayingFrom"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/stayingFrom"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:maxLength="6"
+                android:inputType="date"
+                android:imeOptions="actionDone"
+                android:backgroundTint="@android:color/black"
+                android:autofillHints="@string/enter_annual_income"
+                android:layout_column="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <EditText
+                android:id="@+id/etStayingTo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/stayingTo"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:maxLength="6"
+                android:inputType="date"
+                android:imeOptions="actionDone"
+                android:backgroundTint="@android:color/black"
+                android:autofillHints="@string/enter_annual_income"
+                android:layout_column="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"
+                android:layout_marginTop="7dp"/>
+
+            <EditText
+                android:id="@+id/tvAddress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_address"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_column="3"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@android:color/black"
+                android:autofillHints="@string/enter_your_address"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/tvAddress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_address"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@android:color/black"
+                android:layout_column="3"
+                android:autofillHints="@string/enter_your_address"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/tvAddress3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_address"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:layout_column="3"
+                android:backgroundTint="@android:color/black"
+                android:autofillHints="@string/enter_your_address"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_code"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"
+                android:layout_marginTop="7dp"/>
+
+            <EditText
+                android:id="@+id/tvPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_pin_code"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_column="3"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@android:color/black"
+                android:autofillHints="@string/enter_your_address"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tr_resi_doc"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_resi_docu"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/doc_address_proof"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/colon_space"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_column="2"/>
+            <Spinner
+                android:id="@+id/sp_resi_doc"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_column="3" />
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:textAllCaps="false"
+        android:text="@string/add"
+        android:layout_column="1"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        style="?android:buttonBarButtonStyle"
+        app:layout_constraintTop_toBottomOf="@+id/tl_service39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

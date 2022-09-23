@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/field_report"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/taluk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taluk"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/hobli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobli"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/RI_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tvServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_name"
+            android:textColor="#377691"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/applicant_Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/applicant_information"
+            android:textColor="@color/MAROON"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editing_form"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/raised_location"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:layout_marginStart="9dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_raiseLoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:layout_marginStart="9dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoSearchAppTitle"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@android:color/black"
+                            android:completionThreshold="1"
+                            android:hint="@string/select_title"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/father_husband"
+                        android:layout_gravity="top"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_gravity="top"
+                        android:text="@string/colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="5dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoSearchBinCom"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@android:color/black"
+                            android:completionThreshold="1"
+                            android:backgroundTint="@android:color/black"
+                            android:hint="@string/select_title"/>
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoSearchFatTitle"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@android:color/black"
+                            android:completionThreshold="1"
+                            android:backgroundTint="@android:color/black"
+                            android:hint="@string/select_title"/>
+
+                        <EditText
+                            android:id="@+id/etFatherNme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_father_name"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:layout_gravity="start"
+                            android:inputType="textPersonName"
+                            android:backgroundTint="@android:color/black"
+                            android:autofillHints="@string/enter_father_name"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mother"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etMotherName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_mother_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/black"
+                        android:inputType="textPersonName"
+                        tools:ignore="Autofill" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_no"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/etAddress1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_your_address"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:inputType="textMultiLine"
+                                android:backgroundTint="@android:color/black"
+                                android:autofillHints="@string/enter_your_address"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/etAddress2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_your_address"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:inputType="textMultiLine"
+                                android:backgroundTint="@android:color/black"
+                                android:autofillHints="@string/enter_your_address"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/etAddress3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_your_address"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:inputType="textMultiLine"
+                                android:backgroundTint="@android:color/black"
+                                android:autofillHints="@string/enter_your_address"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pin_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etPinCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_pin_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLength="6"
+                        android:inputType="phone"
+                        android:backgroundTint="@android:color/black"
+                        android:autofillHints="@string/enter_pin_code" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_appAge"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/age"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                    <EditText
+                        android:id="@+id/etAppAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/black"
+                        android:textColor="@android:color/black"
+                        android:hint="Enter the age"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat,UnusedAttribute"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_AnnualIncome"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Annual income"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                    <EditText
+                        android:id="@+id/etAnnualIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/black"
+                        android:textColor="@android:color/black"
+                        android:hint="Enter the Annual Income"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat,UnusedAttribute"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvGetPension"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Are applicant getting any other Pension ?"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#87433b"
+                            android:checked="false"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="Yes"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#87433b"
+                            android:checked="true"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="No"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/lnDept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvDept"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="From which Department "
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:text="@string/colon"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spDept"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:backgroundTint="@android:color/black"
+                            tools:ignore="RtlCompat,UnusedAttribute" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnDeptScheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/tvScheme"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="From which Scheme"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:text="@string/colon"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etScheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@android:color/black"
+                            android:hint="Enter the  Scheme"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lnDeptDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="From which Date"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:text="@string/colon"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:hint="Enter the Date"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="14sp"
+                            android:backgroundTint="@android:color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnDeptAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="Department Amount"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="9dp"
+                            android:text="@string/colon"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the Amount per month"
+                            android:backgroundTint="@android:color/black"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="whether applicant is residing in karnataka from last 10 yrs ? "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#87433b"
+                            android:checked="true"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="Yes"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#87433b"
+                            android:checked="false"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="No"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Whether attested the residence certificate along with application ?"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#87433b"
+                            android:checked="true"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="Yes"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#87433b"
+                            android:checked="false"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="No"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Remarks"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Enter the remarks"
+                        android:imeOptions="actionDone"
+                        android:inputType="textImeMultiLine"
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@android:color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/report_no"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="@string/colon"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_ReportNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/RI_Recommendation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ri_recommendation"
+                        android:textColor="@color/MAROON"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:text="@string/whether_applicant_can_be_given_ignoap_pension"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="center"
+                        android:text=":"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        tools:ignore="RtlHardcoded">
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:checked="true"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="Yes"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            tools:ignore="TooManyViews" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:checked="false"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="No"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/back"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/button_background"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/certified_correct_amp_proceed"
+                    android:textColor="@android:color/black"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
